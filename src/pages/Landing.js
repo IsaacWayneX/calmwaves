@@ -14,6 +14,12 @@ const Nav = styled.nav`
     padding: 1.2rem 2.5rem;
     background: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+    @media (max-width: 768px) {
+        padding: 1rem 1.5rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
 `;
 
 const Logo = styled.div`
@@ -27,6 +33,10 @@ const Logo = styled.div`
     -webkit-text-fill-color: transparent;
     font-family: 'Righteous', 'Poppins', sans-serif;
     letter-spacing: 0.5px;
+
+    @media (max-width: 768px) {
+        font-size: 1.2rem;
+    }
     
     span {
         font-size: 2rem;
@@ -55,6 +65,12 @@ const Button = styled.button`
     cursor: pointer;
     transition: all 0.3s ease;
     font-size: ${props => props.primary ? '1.2rem' : '1rem'};
+
+    @media (max-width: 768px) {
+        padding: ${props => props.primary ? '1rem 2rem' : '0.6rem 1.2rem'};
+        font-size: ${props => props.primary ? '1.1rem' : '0.9rem'};
+        width: ${props => props.primary ? '90%' : 'auto'};
+    }
     
     ${props => props.primary ? `
         background: #00695c;
@@ -86,6 +102,11 @@ const Title = styled.h1`
     font-family: 'Georgia', serif;
     position: relative;
     z-index: 2;
+
+    @media (max-width: 768px) {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
 `;
 
 const Subtitle = styled.p`
@@ -97,6 +118,12 @@ const Subtitle = styled.p`
     font-weight: 500;
     position: relative;
     z-index: 2;
+
+    @media (max-width: 768px) {
+        font-size: 1.1rem;
+        margin: 0 auto 2rem;
+        padding: 0 1rem;
+    }
 `;
 
 const ProfileGrid = styled.div`
@@ -108,6 +135,13 @@ const ProfileGrid = styled.div`
     padding: 0 2rem;
     position: relative;
     z-index: 2;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
 `;
 
 const ProfileCard = styled.div`
@@ -178,6 +212,12 @@ const FooterContent = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 3rem;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
 `;
 
 const FooterSection = styled.div`
@@ -219,6 +259,13 @@ const FeatureGrid = styled.div`
     gap: 2rem;
     max-width: 1200px;
     margin: 3rem auto;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
 `;
 
 const FeatureCard = styled.div`

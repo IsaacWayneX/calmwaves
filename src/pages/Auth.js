@@ -172,6 +172,35 @@ const Auth = () => {
 };
 
 const styles = {
+    '@media (max-width: 768px)': {
+        pageContainer: {
+            flexDirection: 'column'
+        },
+        formSection: {
+            padding: '20px'
+        },
+        formContainer: {
+            maxWidth: '100%'
+        },
+        title: {
+            fontSize: '24px'
+        },
+        input: {
+            fontSize: '14px',
+            padding: '12px'
+        },
+        select: {
+            fontSize: '14px',
+            padding: '12px'
+        },
+        button: {
+            padding: '14px',
+            fontSize: '14px'
+        },
+        imageSection: {
+            display: 'none'
+        }
+    },
     goBackButton: {
         padding: '8px 16px',
         fontSize: '16px',
